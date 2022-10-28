@@ -1,4 +1,3 @@
-import { getQueriesForElement } from "@testing-library/react";
 import React, {Component, useState} from "react";
 import '../styles/App.css';
 
@@ -28,8 +27,8 @@ const App = (props) => {
     <>
     <h1 data-testid="title">{getForm.title}</h1>
     <p data-testid="text">{getForm.text}</p>
-    <button disabled={getCount==0} data-testid="button-restart" onClick={onRestartHandler}>Start</button>
-    <button disabled={getCount==0} data-testid="button-prev" onClick={onPreviousHandler}>Previous</button>
+    <button disabled={getCount==0} data-testid="button-restart" onClick={onRestartHandler}>Restart</button>
+    <button disabled={getCount==0} data-testid="button-prev" onClick={onPreviousHandler}>Prev</button>
     <button disabled={getCount==props.slides.length-1}  data-testid="button-next" onClick={onNextHandler}>Next</button>
     </>
   )
